@@ -56,7 +56,7 @@ body {
   position: absolute;
   width: 92px;
   height: 92px;
-  background-image: url("../../assets/hero-4.png");
+  /*background-image: url("assets/hero-4.png");*/
   background-position: center;
   background-size: cover;
   bottom: 0;
