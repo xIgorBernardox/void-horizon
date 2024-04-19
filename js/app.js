@@ -6,7 +6,7 @@ const nave = document.querySelector('.nave');
 const vida = document.querySelector('.vida');
 const pontos = document.querySelector('.pontos');
 
-const musicGame = new Audio("/audios/music-game-1.mp3");
+const musicGame = new Audio("audios/music-game-1.mp3");
 
 // Pegando Altura e Largura da nave e da arena
 const arenaWidth = arena.offsetWidth;
@@ -131,7 +131,7 @@ const gerarShot = (posLeftShot, posTopShot) => {
 const audioShots = () => {
   shotSound = document.createElement("audio");
   shotSound.className = "shotSound";
-  shotSound.setAttribute("src", "/audios/shot-1.mp3");
+  shotSound.setAttribute("src", "audios/shot-1.mp3");
   shotSound.play();
   arena.appendChild(shotSound);
   shotSound.addEventListener("ended", () => {
@@ -162,7 +162,7 @@ const genEnemy = () => {
   enemy.style.position = "absolute";
   enemy.style.width = "100px";
   enemy.style.height = "100px";
-  enemy.style.backgroundImage = "url(/assets/enemy-1.png)";
+  enemy.style.backgroundImage = "url(assets/enemy-1.png)";
   enemy.style.backgroundPosition = "center";
   enemy.style.backgroundRepeat = "no-repeat";
   enemy.style.backgroundSize = "contain";
@@ -178,7 +178,7 @@ const genEnemy2 = () => {
   enemy2.style.position = "absolute";
   enemy2.style.width = "100px";
   enemy2.style.height = "100px";
-  enemy2.style.backgroundImage = "url(/assets/enemy-2.png)";
+  enemy2.style.backgroundImage = "url(assets/enemy-2.png)";
   enemy2.style.backgroundPosition = "center";
   enemy2.style.backgroundRepeat = "no-repeat";
   enemy2.style.backgroundSize = "contain";
@@ -194,7 +194,7 @@ const genEnemy3 = () => {
   enemy3.style.position = "absolute";
   enemy3.style.width = "100px";
   enemy3.style.height = "100px";
-  enemy3.style.backgroundImage = "url(/assets/enemy-3.png)";
+  enemy3.style.backgroundImage = "url(assets/enemy-3.png)";
   enemy3.style.backgroundPosition = "center";
   enemy3.style.backgroundRepeat = "no-repeat";
   enemy3.style.backgroundSize = "contain";
@@ -264,7 +264,7 @@ const destroyEnemy = (posLeftEnemy, posTopEnemy) => {
   destroyEnemy.style.position = "absolute";
   destroyEnemy.style.width = "100px";
   destroyEnemy.style.height = "100px";
-  destroyEnemy.style.backgroundImage = "url(/assets/explosion-1.gif)";
+  destroyEnemy.style.backgroundImage = "url(assets/explosion-1.gif)";
   destroyEnemy.style.backgroundPosition = "center";
   destroyEnemy.style.backgroundRepeat = "no-repeat";
   destroyEnemy.style.backgroundSize = "contain";
@@ -282,7 +282,7 @@ const explosionEnemy = (posLeftEnemy) => {
   explosionEnemy.style.position = "absolute";
   explosionEnemy.style.width = "100px";
   explosionEnemy.style.height = "100px";
-  explosionEnemy.style.backgroundImage = "url(/assets/explosion-1.gif)";
+  explosionEnemy.style.backgroundImage = "url(assets/explosion-1.gif)";
   explosionEnemy.style.backgroundPosition = "center";
   explosionEnemy.style.backgroundRepeat = "no-repeat";
   explosionEnemy.style.backgroundSize = "contain";
@@ -297,7 +297,7 @@ const explosionEnemy = (posLeftEnemy) => {
 const audioExplosion = () => {
   explosionSound = document.createElement("audio");
   explosionSound.className = "explosionSound";
-  explosionSound.setAttribute("src", "/audios/explosao-1.mp3");
+  explosionSound.setAttribute("src", "audios/explosao-1.mp3");
   explosionSound.play();
   arena.appendChild(explosionSound);
   explosionSound.addEventListener("ended", () => {
