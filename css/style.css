@@ -1,0 +1,116 @@
+:root {
+  color-scheme: light dark;
+
+  --title: Kode Mono, sans-serif, Arial, Helvetica;
+  --font-variation: Anta, sans-serif, Arial, Helvetica;
+  --primary-font: Poppins, sans-serif, Arial, Helvetica;
+  --secondary-font: Roboto, sans-serif, Arial, Helvetica;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* DIV pai */
+.arena {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+/* Background */
+.bg-arena {
+  position: fixed;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* DIV Menu */
+.menu {
+  position: absolute;
+  width: 80vw;
+  height: 10vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: var(--font-variation);
+  font-size: 22px;
+  letter-spacing: 2px;
+
+}
+
+/* Nave Heroi */
+.nave {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+
+  background-image: url(/assets/hero-4.png);
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+}
+
+.shot {
+  border-radius: 200px 200px 18px 18px;
+  -moz-border-radius: 200px 200px 18px 18px;
+  -webkit-border-radius: 200px 200px 18px 18px;
+
+  -webkit-box-shadow: 0px 0px 42px 6px rgba(0,255,251,1);
+  -moz-box-shadow: 0px 0px 42px 6px rgba(0,255,251,1);
+  box-shadow: 0px 0px 42px 6px rgba(0,255,251,1);
+}
+
+/* Botão Iniciar */
+#iniciar {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  font-family: var(--title);
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  border: 2px solid rgb(221, 0, 255);
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  animation: shadow-btn-animation 2s infinite alternate;
+
+  display: block;
+}
+
+/* ANIMATIONS */
+@keyframes shadow-btn-animation {
+  0% {
+    box-shadow: -1px 1px 68px 3px rgb(255, 0, 234);
+  }
+
+  25% {
+    box-shadow: -1px 1px 68px 3px rgb(140, 0, 255);
+  }
+
+  50%{
+    box-shadow: -1px 1px 68px 3px rgb(0, 34, 255);
+  }
+
+  100% {
+    box-shadow: -1px 1px 68px 3px rgb(0, 255, 255);;
+  }
+}
